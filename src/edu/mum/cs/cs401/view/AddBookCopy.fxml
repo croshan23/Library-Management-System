@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="305.0" prefWidth="375.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="edu.mum.cs.cs401.controller.DashBoardController">
+	<children>
+		<GridPane alignment="CENTER" layoutX="0" layoutY="0"
+			AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0"
+			AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+			<children>
+				<TextField fx:id="copyNumber" promptText="copy number"
+					GridPane.columnSpan="2" GridPane.rowIndex="2" />
+				<HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0"
+					GridPane.columnIndex="1" GridPane.rowIndex="5" spacing="20.0">
+					<children>
+						<Button mnemonicParsing="false" onAction="#addBookCopy" text="Save" />
+					</children>
+				</HBox>
+			</children>
+		</GridPane>
+	</children>
+</AnchorPane>
